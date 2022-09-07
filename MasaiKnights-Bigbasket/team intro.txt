@@ -1,0 +1,9 @@
+Members....                                              Task
+
+student 1:- Yuvraj yadav(256)web-5                  -- Bestseller card  
+Student 2:-Deepak Singh Rathore(021)web-6           -- Navbar
+student 3:-Rajtilak Patel(014)web-6                 -- landing page
+student 3:-Faizan wani(060)-web-6                   -- login signup
+
+
+Note:- branch should be created accordingly task name........

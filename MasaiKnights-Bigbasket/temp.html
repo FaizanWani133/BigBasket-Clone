@@ -1,0 +1,218 @@
+<ul class="navbar_bottom_first">
+    <li class="category"><a ng-mouseover="vm.readyToShow = true" href="#"
+            class="dropdown-toggle meganav-shop" qa="categoryDD" data-toggle="dropdown"> Shop by
+            Category <i style="float: right;margin-top: 8px;margin-right: 5px;"
+                class="icon svg-header svg-arrow-down-hover svg-arrow-down-hover-dim"></i></a>
+        <ul class="category-hover-div">
+            <li>
+                <div class="category-hover-div-left">
+                    <ul>
+                        <!-- ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Fruits &amp; Vegetables</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Foodgrains, Oil &amp; Masala</a>
+                        </li><!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Bakery, Cakes &amp; Dairy</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Beverages</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Snacks &amp; Branded Foods</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Beauty &amp; Hygiene</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Cleaning &amp; Household</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Kitchen, Garden &amp; Pets</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Eggs, Meat &amp; Fish</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Gourmet &amp; World Food</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>Baby Care</a></li>
+                        <!-- end ngRepeat: item in vm.leftmenu | limitTo:14 -->
+                        <li><a>View All</a></li>
+                    </ul>
+                        <div>
+                            <div>
+                                <left-subcategory-template>
+                                    <div id="fruits-vegetables">
+                                        <!-- Output -->
+                                        <div>
+                                            <div class="tabbable col-md-12 pad-rt-0" style="height: 460px">
+                                                <div class="col-md-3 pad-rt-0 desgn-fix" style="margin-top:1px">
+                                                    <ul class="nav nav-pills nav-stacked">
+                                                        <!-- ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li ><a>Fresh Vegetables</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Herbs &amp; Seasonings</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Fresh Fruits</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Organic Fruits &amp; Vegetables</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Cuts &amp; Sprouts</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Exotic Fruits &amp; Veggies</a></li>
+                                                        <!-- end ngRepeat: l2 in vm.selectedtop.subcategories.chunks.chunk1 | limitTo:15 -->
+                                                        <li><a>Flower Bouquets, Bunches</a></li>
+                                                    </ul>
+                                                </div><!-- end col -->
+                                                <div class="col-md-9 no-boxshadow desgn-fix">
+                                                    <!-- ngIf: !vm.viewallL2 -->
+                                                    <div class="tab-content ng-scope" ng-if="!vm.viewallL2"
+                                                        style="box-shadow: none">
+                                                        <div class="tab-pane active">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6 col-xs-12 pad-0 change-wid"
+                                                                    style="border-right: 1px dashed #DEDEDE;height:457px">
+                                                                    <div class="box">
+                                                                        <ul class="list-unstyled">
+                                                                            <li>Potato, Onion &amp; Tomato</li>
+                                                                            <li>Cucumber &amp; Capsicum</li>
+                                                                            <li>Leafy Vegetables</a></li>
+                                                                            <li>Root Vegetables</a></li>
+                                                                            <li>Beans, Brinjals &amp; Okra</li>
+                                                                            <li>Cabbage &amp; Cauliflower</li>
+                                                                            <li>Gourd, Pumpkin, Drumstick</li>
+                                                                            <li>Specialty</li>
+                                                                        </ul>
+                                                                    </div><!-- end box -->
+                                                                </div><!-- Banner -->
+                                                                <div class="col-md-8 change-wid"
+                                                                    style="height: 457px; position: relative">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 pad-0 dont-show"
+                                                                            style="height:459px;position:relative">
+                                                                            <div class="box"
+                                                                                style="position: absolute;top: 0;left: 0;height:200px;width:100%">
+                                                                                <!-- ngIf: vm.selectedl2.search_term.length != 0 -->
+                                                                                <h3 ng-if="vm.selectedl2.search_term.length != 0"
+                                                                                    class="ng-scope">Popular
+                                                                                    Searches</h3>
+                                                                                <!-- end ngIf: vm.selectedl2.search_term.length != 0 -->
+                                                                                <ul class="list-unstyled"
+                                                                                    style="padding-left:0px">
+                                                                                    <!-- ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"
+                                                                                        style=""><a
+                                                                                            ng-href="/ps/?q=Vegetables&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Vegetables&amp;nc=nb&amp;tp=fresh-vegetables">Vegetables</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"><a
+                                                                                            ng-href="/ps/?q=Tomato&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Tomato&amp;nc=nb&amp;tp=fresh-vegetables">Tomato</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"><a
+                                                                                            ng-href="/ps/?q=Potato&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Potato&amp;nc=nb&amp;tp=fresh-vegetables">Potato</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"><a
+                                                                                            ng-href="/ps/?q=Onion&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Onion&amp;nc=nb&amp;tp=fresh-vegetables">Onion</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"><a
+                                                                                            ng-href="/ps/?q=Vegetable&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Vegetable&amp;nc=nb&amp;tp=fresh-vegetables">Vegetable</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                    <li ng-repeat="searchTerm in vm.selectedl2.search_term | limitTo:6"
+                                                                                        class="ng-scope"><a
+                                                                                            ng-href="/ps/?q=Cucumber&amp;nc=nb&amp;tp=fresh-vegetables"
+                                                                                            ng-bind="searchTerm.display_term"
+                                                                                            class="ng-binding"
+                                                                                            href="/ps/?q=Cucumber&amp;nc=nb&amp;tp=fresh-vegetables">Cucumber</a>
+                                                                                    </li>
+                                                                                    <!-- end ngRepeat: searchTerm in vm.selectedl2.search_term | limitTo:6 -->
+                                                                                </ul>
+                                                                            </div>
+                                                                            <!-- ngIf: vm.selectedl2.banner -->
+                                                                            <div class="box2 ng-scope"
+                                                                                ng-if="vm.selectedl2.banner"
+                                                                                style="position: absolute; bottom: 0px; right: 0px; height: 260px; width: 100%;">
+                                                                                <a ng-href="">
+                                                                                    <!-- ngIf: vm.selectedl2.banner.type =='s' || vm.selectedl2.banner.type =='sv' -->
+                                                                                </a></div>
+                                                                            <!-- end ngIf: vm.selectedl2.banner -->
+                                                                        </div>
+                                                                        <!-- ngIf: vm.selectedl2.banner -->
+                                                                        <div class="col-md-6 change-wid ng-scope"
+                                                                            ng-if="vm.selectedl2.banner"
+                                                                            style="height: 457px; position: relative;">
+                                                                            <div class="col-md-12 pad-0"
+                                                                                style="height: 459px;width:100%">
+                                                                                <a ng-href="&amp;t_pos=1&amp;t_from_ban=5044291"
+                                                                                    data-bannerplower="5044291:1"
+                                                                                    href="&amp;t_pos=1&amp;t_from_ban=5044291">
+                                                                                    <!-- ngIf: vm.selectedl2.banner.type =='v' || vm.selectedl2.banner.type =='sv' --><img
+                                                                                        ng-src="//www.bigbasket.com/media/uploads/banner_images/YXPL8310-220x460-25thjuly.jpg"
+                                                                                        alt="Vertical Banner"
+                                                                                        class="img-responsive pull-right ng-scope"
+                                                                                        ng-if="vm.selectedl2.banner.type =='v' || vm.selectedl2.banner.type =='sv'"
+                                                                                        style="width: auto; position: absolute; bottom: 0; right: -30px; max-width: none"
+                                                                                        src="//www.bigbasket.com/media/uploads/banner_images/YXPL8310-220x460-25thjuly.jpg">
+                                                                                    <!-- end ngIf: vm.selectedl2.banner.type =='v' || vm.selectedl2.banner.type =='sv' -->
+                                                                                </a></div>
+                                                                        </div>
+                                                                        <!-- end ngIf: vm.selectedl2.banner -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end ngIf: !vm.viewallL2 -->
+                                                    <!-- /.tab-content -->
+                                                </div><!-- end col -->
+                                            </div><!-- /.tabbable -->
+                                        </div><!-- ./Output -->
+                                    </div>
+                                </left-subcategory-template>
+                            </div><!-- end ngIf: !vm.viewall -->
+                        </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <!-- Other Dropdown's on the main navigation bar -->
+    <!-- ngIf: vm.offerFlowEnabled == 0 -->
+    <!-- ngIf: vm.offerFlowEnabled == 1 -->
+    <li class="dropdown add-drop ng-scope" ng-if="vm.offerFlowEnabled == 1" style="">
+        <a href="/offers/?nc=nb" class="bb-offers-link" qa="offersDD" role="button">
+            <i class="icon svg-offer-icon svg-header svg-offer-icon-dim"></i>
+            <span>OFFERS</span>
+        </a>
+    </li><!-- end ngIf: vm.offerFlowEnabled == 1 -->
+    <!-- ngIf: is_express_availaible -->
+
+    <!-- ngIf: has_speciality -->
+
+    <!-- ngIf: vm.mainMenuEntryShop1['Image name'] -->
+
+    <!-- <li class="dropdown add-drop fire"  ng-if="vm.shops.length > 0">
+ <a href="#" class="dropdown-toggle bb-morestore-icon-link" qa="moreStoresDD" data-toggle="dropdown" role="button"
+    aria-haspopup="true" aria-expanded="false">
+     <i class="icon svg-more-store svg-header svg-more-store-dim"></i><span style="margin-left: 6px;">MORE STORES</span><i class="icon svg-header svg-arrow-down svg-arrow-down-dim"></i></span></a>
+ <ul class="dropdown-menu" style="min-width: 115%;">
+     <li ng-repeat="shop in vm.shops"><a ng-href="{[{shop.landing_url}]}?nc=nb" qa="moreStoresDDList" ng-bind="shop.name"></a>
+     </li>
+ </ul>
+</li> -->
+    <!-- ./Other Dropdown's on the main navigation bar -->
+</ul>

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/login/login.css">
+    <style>
+
+         /* Login css Start */
+         
+         /* Login css End */
+        /*-------------- Navbar css Start -----------------*/
+        
+        #upnav {
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            /* border: 2px dashed red; */
+            height: 160px;
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+        a:hover{
+            color: #72A020;
+        }
+
+        #navbar {
+            width: 100%;
+            z-index: 2;
+            display: flex;
+            position: fixed;
+            z-index: 2;
+            background-color: #FFFFFF;
+            justify-content: center;
+            /* border: 2px dashed black; */
+        }
+
+        #navbarsub {
+            width: 80%;
+        }
+
+        #navbar_top {
+            display: flex;
+            justify-content: end;
+            gap: 2%;
+        }
+
+        #navbar_middle {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #navbar_middle_right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar_top div {
+            margin-bottom: 1%;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+
+        #cart {
+            display: flex;
+            /* height: 3em; */
+            width: 9em;
+            background-color: #f2f2f2;
+            /* border: 1px solid blue; */
+            /* gap: 7px; */
+            align-content: space-between;
+            /* padding: 0.2%; */
+            /* margin: -6px -15px -6px 0; */
+            border: 1px solid #f2f2f2;
+            /* float: right; */
+            cursor: pointer;
+        }
+         
+        #cart:hover {
+            background-color: #eeeeee;
+        }
+        #cart div {
+            /* border: 1px solid brown; */
+            /* height: min-content; */
+            margin-top: 7px;
+            text-align: right;
+        }
+
+        #cart div p {
+            margin: auto;
+            font-size: smaller;
+        }
+
+        #cart_img {
+            width: 40%;
+            /* border: 1px solid teal; */
+            display: flex;
+        }
+
+        #cart_img img {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            /* border: 1px solid aqua; */
+        }
+
+        #cart_qunt {
+            /* line-height: -10px; */
+            /* border: 1px solid lightcoral; */
+            line-height: 10px;
+            /* justify-content: baseline; */
+            text-align: center;
+            font-size: large;
+        }
+
+
+        #sarch_and_cart
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 79%;
+            justify-content: sp;
+        }
+        #search_item {
+            width: 58%;
+            display: flex;
+            height: 30px;
+            align-items: flex-end;
+        }
+
+        #search_item>img {
+            padding: -10px 0px 10px 10px;
+            height: 30px;
+
+        }
+
+        #search_item input {
+            width: 100%;
+            height: 2em;
+            margin-top: -2%;
+        }
+
+        #logo {
+            /* position: absolute; */
+            /* top: -12%; */
+            margin-top: -4%;
+        }
+
+        #navbar_bottom {
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: auto;
+            height: 35px;
+            /* margin-bottom: 10px; */
+        }
+
+        #navbar_bottom_first {
+            display: flex;
+            width: 100%;
+        }
+
+        #navbar_bottom>div p {
+            margin: 0;
+        }
+
+        /* offers */
+        #offers:hover {
+            background-color: #72A020;
+        }
+        #offers{
+            padding: 5px 5px 0 10px;
+        }
+        
+        #category_dropdown{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            color: #EAEAEA;
+        }
+
+        .category {
+            display: flex;
+            background-color: #84c225;
+            height: 100%;
+            width: 21%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .category> div > p {
+            color: white;
+            font-size: 14px;
+            /* height: 100%; */
+            background-color: #84c225;
+        }
+
+        .category-hover-div {
+            display: flex;
+            width: 67%;
+            position: absolute;
+            height: 420px;
+            background: #fff;
+            border-radius: 0px 0px 4px 4px;
+
+            visibility: hidden;
+            z-index: 2;
+            overflow: hidden;
+            margin-left: -10px;
+        }
+
+        .category:hover .category-hover-div {
+            margin-top: 33px;
+            visibility: visible;
+            opacity: 1;
+            box-shadow: 2px 1px 1px 1px rgb(147, 144, 144);
+        }
+
+        #shopText:hover .category-hover-div {
+            margin-top: 2.6%;
+            visibility: visible;
+            opacity: 1;
+            box-shadow: 2px 1px 1px 1px rgb(147, 144, 144);
+            
+        }
+
+        .category-hover-div-1 {
+            width: 25%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .category-hover-div-1-options:hover {
+            background: #EAEAEA;
+            color: #72A020;
+        }
+
+        .category-hover-div-1-options {
+            width: 100%;
+            height: auto;
+            /* line-height: 60px;
+       */
+            padding: 5%;
+            border-bottom: 1px solid #e4e4e4;
+
+            font-size: 14px;
+            display: flex;
+            color: #555;
+            cursor: pointer;
+            /* padding-right: 25px; */
+            position: relative;
+        }
+
+        .category-hover-div-2 {
+            width: 25%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #EAEAEA;
+            z-index: 1;
+        }
+
+        .category-hover-div-2-options {
+            width: 100%;
+            height: auto;
+            padding: 5%;
+            border-bottom: 1px solid #e4e4e4;
+
+            font-size: 14px;
+            display: flex;
+            color: #555;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .category-hover-div-2-options:hover {
+            background-color: white;
+            color: #72A020;
+        }
+
+        .category-hover-div-3 {
+            width: 25%;
+            height: auto;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .category-hover-div-3-options {
+            width: 100%;
+            height: auto;
+            /* line-height: 60px;
+       */
+            padding: 5%;
+            border-bottom: 1px solid #e4e4e4;
+
+            font-size: 14px;
+            display: flex;
+            color: #555;
+            cursor: pointer;
+            /* padding-right: 25px; */
+            position: relative;
+        }
+
+        .category-hover-div-3-options:hover {
+            background-color: white;
+        }
+
+        .category-hover-div-4 {
+            width: 25%;
+            height: auto;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .category-hover-div-4-options {
+            width: 100%;
+            height: auto;
+            /* line-height: 60px;
+       */
+            padding: 5%;
+            border-bottom: 1px solid #e4e4e4;
+
+            font-size: 14px;
+            display: flex;
+            color: #555;
+            cursor: pointer;
+            /* padding-right: 25px; */
+            position: relative;
+        }
+
+        .category-hover-div-4-options:hover {
+            background-color: white;
+        }
+
+        @media all and (min-width:480px) and (max-width:1100px) {
+            .category> div > p {
+                font-size: 11px;
+            }
+
+        }
+        /* ////////////navbar done//////// */
+
+        /* image sliding  start */
+
+        #show1 img {
+            width: 100%;
+        }
+
+        #image_slider_under_image {
+            width: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        #image_slider_under_image div {
+            width: 20%;
+            /* border: 1px solid red; */
+            margin-top: 2%;
+            margin-right: 2%;
+            /* text-align: justify; */
+        }
+
+        #image_slider_under_image image {
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        /* ////////////////////////login signup////////////// */
+        .open :hover {
+            color: #84c225;
+            background-color: aqua;
+        }
+
+        #sign-in {
+            display: flex;
+            z-index: 1000;
+            position: fixed;
+            width: 42%;
+            height: 69%;
+            margin-right: 230px !important;
+            margin-top: 130px;
+
+            box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            outline: 0;
+        }
+
+        #sign-in>div {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+
+        #navbar_top>div {
+            color: grey;
+            height: 5px;
+            font-size: smaller;
+        }
+
+        .navbar_contact_info:hover {
+            color: #84c225;
+            cursor: pointer;
+        }
+
+        #mfglass {
+            height: 2em;
+            width: 40px;
+            display: inline;
+            vertical-align: center;
+            vertical-align: -webkit-baseline-middle;
+            background: #84C225;
+            line-height: 15px;
+        }
+
+        #mfglass>i {
+            display: inline-block;
+            vertical-align: center;
+            vertical-align: -webkit-baseline-middle;
+            padding: 13px 10px;
+            color: white;
+            /* padding-bottom: 10px; */
+            margin-top: -7px;
+
+        }
+
+        @keyframes navAnimation {
+            from {
+                visibility: visible;
+            }
+
+            to {
+                visibility: none;
+            }
+        }
+
+        @media all and (min-width:480px) and (max-width:780px) {
+            #navbar {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(auto, auto);
+            }
+
+        }
+
+        @media all and (min-width:50px) and (max-width:481px) {
+            /* #navbar {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(auto, auto);
+    } */
+        }
+        #hover-green>i:hover,span:hover{
+            color: #72A020;
+
+        }
+        #hover-green>i, span{
+            color: gray;
+            /* width: 10%; */
+        }
+        #cart{
+            position: relative;
+        }
+
+        /*-------------- Navbar css End -----------------*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="upnav">
+            <div id="navbar">
+                <div id="navbarsub">
+                    <div id="navbar_top">
+                        <div id="hover-green" class="navbar_contact_info"><i class="fa-solid fa-phone"></i><span style="margin-left: 5px;">1860 123 1000 </span></div>
+                        <div id="hover-green" class="navbar_contact_info"><i class="fa-solid fa-location-dot"></i><span style="margin-left: 5px;">560004, bangalore</span></div>
+                        <div id="hover-green" class="navbar_contact_info"><i class="fa-solid fa-user"></i></i><span id="navbar_login" style="margin-left: 5px;">Log In/Sign Up</span></div>
+                        <span id="showname"></span>
+                    </div>
+                    <div id="navbar_middle">
+                        <div id="imgAndshop">
+                            <a href="/index.html" style="opacity: 1;">
+                            <img id="logoImg"
+                                src="https://github.com/Deepak123bharat/MasaiknightsBigbasket/blob/main/images/logos/logo.png?raw=true"
+                                alt="" style="height: 75px;" /></a>
+                        </div>
+
+                        <div id="sarch_and_cart">
+                            <div id="search_item" ">
+                                <input style="height: 32px;" type="text" name="" placeholder="Search for products..." id="" />
+                                <div id="mfglass"><i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div id="cart">
+                                <div id="cart_img">
+                                    <img src="https://github.com/Deepak123bharat/MasaiknightsBigbasket/blob/main/images/basket.png?raw=true"
+                                        alt="" />
+                                </div>
+                                <div id="cart_qunt">
+                                    <p>My Basket</p>
+                                    <br>
+                                    <p><span id="cart_items">0</span> Item</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="navbar_bottom">
+                        <div id="navbar_bottom_first">
+
+                            <!-- -------- Dropdown ----------- -->
+                            <div class="category">
+                                <div id="category_dropdown">
+                                    <p>SHOP BY CATEGORY </i></p>
+                                    <i class="fa-solid fa-chevron-down" style="color: white;"></i>
+                                </div>
+                                <div class="category-hover-div" id="category-hover-div">
+                                    <div class="category-hover-div-1">
+                                        <div class="category-hover-div-1-options">
+                                            <a href="/productData/Vegetables/products.html">Fruits &amp; Vegetables</a>
+                                        </div>
+                                        <div class="category-hover-div-1-options foodgrains_option">
+                                            <a href="/productData/FoodGrains/products.html">Foodgrains, Oil &amp; Masala</a>
+                                        </div>
+                                        <div class="category-hover-div-1-options">
+                                            <a href="/productData/Dairy/products.html">Bakery Cakes & Dairy</a>
+                                        </div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/Beverages/products.html">Beverages</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/Snacks/products.html">Snacks &amp; Branded Foods</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/Beauty/products.html">Beauty & Hygiene</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/cleaning/products.html">Cleaning &amp; Household</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/kitchen/products.html">Kitchen, Garden &amp; Pets</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/eggs/product.html">Eggs, Meats &amp; Fish</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/Vegetables/products.html">Gourmet &amp; World Food</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/Beauty/products.html">Baby Care</a></div>
+                                        <div class="category-hover-div-1-options"><a href="/productData/FoodGrains/products.html">View All</a></div>
+                                    </div>
+                                    <div class="category-hover-div-2">
+                                        <div class="category-hover-div-2-options">
+                                            Fresh Vegetables
+                                        </div>
+                                        <div class="category-hover-div-2-options">
+                                            Herbs & Seasonings
+                                        </div><br>
+                                        <div class="category-hover-div-2-options">
+                                            Fresh Fruits
+                                        </div><br>
+                                        <div class="category-hover-div-2-options">Organic Fruits & Vegetables</div><br>
+                                        <div class="category-hover-div-2-options">Cuts & Sprouts</div><br>
+                                        <div class="category-hover-div-2-options">Exotic Fruits & Veggies</div><br>
+                                        <div class="category-hover-div-2-options">Flower Bouquets, Bunches</div><br>
+                                    </div>
+                                    <div class="category-hover-div-3">
+                                        <div class="category-hover-div-3-options">
+                                            Fresh Vegetables
+                                        </div>
+                                        <div class="category-hover-div-3-options">
+                                            Herbs & Seasonings
+                                        </div><br>
+                                        <div class="category-hover-div-3-options">
+                                            Fresh Fruits
+                                        </div><br>
+                                        <div class="category-hover-div-3-options">Organic Fruits & Vegetables</div><br>
+                                        <div class="category-hover-div-3-options">Cuts & Sprouts</div><br>
+                                        <div class="category-hover-div-3-options">Exotic Fruits & Veggies</div><br>
+                                        <div class="category-hover-div-3-options">Flower Bouquets, Bunches</div><br>
+                                    </div>
+                                    <div class="category-hover-div-4">
+                                        <div class="category-hover-div-4-options">
+                                            Fresh Vegetables
+                                        </div>
+                                        <div class="category-hover-div-4-options">
+                                            Herbs & Seasonings
+                                        </div><br>
+                                        <div class="category-hover-div-4-options">
+                                            Fresh Fruits
+                                        </div><br>
+                                        <div class="category-hover-div-4-options">Organic Fruits & Vegetables</div><br>
+                                        <div class="category-hover-div-4-options">Cuts & Sprouts</div><br>
+                                        <div class="category-hover-div-4-options">Exotic Fruits & Veggies</div><br>
+                                        <div class="category-hover-div-4-options">Flower Bouquets, Bunches</div><br>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="offers">
+                                <p><i class="fa-solid fa-tag" style="color:red; margin-right:5px"></i>OFFERS</p>
+                            </div>
+                        </div>
+                        <div id="navbar_bottom_second">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+            <!-- Login Sign Up Start -->
+        
+            <div class="modal-bg" style="line-height: 1;">
+
+                <div class="main-container">
+                    <div class="child-container">
+                        <div class="final-container">
+                            <i id="closeBtn" class="fa-solid fa-circle-xmark" onclick=closepopup()>X</i>
+                            <div class="box">
+                                <form>
+                                    <h2 class="text-center">Sign Up</h2>
+                                    <div class="input-container">
+                                        <input type="text" id="name" required="" />
+                                        <label>Enter Name</label>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="email" id="signup-email" required="" />
+                                        <label>Enter Email</label>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="number" id="number" required="" />
+                                        <label>Enter Mobile Number (10 Digit)</label>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="password" id="signup-password" autocomplete="on" />
+                                        <label>Set Password</label>
+                                    </div>
+                                </form>
+                                <button  style="font-size: 12px;" class="submit-btn" id="switch-to-login" onclick=changeModal()>Already Registered?
+                                    Login Here</button>
+                                <input style="margin-bottom: 20px;" class="submit-btn" type="submit" value="Sign Up" id="signup" onclick=getDetails() />
+                                <p id="terms-conditions">
+                                    By continuing, I accept TCP-bigbasket’s Terms and Conditions
+                                    and Privacy Policy.
+                                </p>
+    
+                            </div>
+                            <div class="box-3">
+                                <form>
+                                    <h2 class="text-center">login</h2>
+    
+                                    <div class="input-container">
+                                        <input type="email" id="login-email" required="" />
+                                        <label>Enter Email</label>
+                                    </div>
+    
+                                    <div class="input-container">
+                                        <input type="password" id="login-password" required="" />
+                                        <label>Enter Password</label>
+                                    </div>
+                                </form>
+                                <button style="font-size: 12px;" class="submit-btn" onclick=changeModal() id="switch-to-signUp">Not Register? Sign Up
+                                    Here </button>
+                                <input style="margin-bottom: 20px;" class="submit-btn" type="submit" value="Log in" id="signup" onclick=checkDetails() />
+                                <p id="terms-conditions">
+                                    By continuing, I accept TCP-bigbasket’s Terms and Conditions
+                                    and Privacy Policy.
+                                </p>
+    
+                            </div>
+                            <div class="box-2">
+                                <div class="homepage-link">
+                                    <a href="">
+                                        <div class="quality-box">
+                                            <div class="logo">
+                                                <i class="fa-solid fa-face-smile"></i>
+                                            </div>
+                                            <div class="logo-text">
+                                                <h3 id="quality-h3">Quality</h3>
+                                                <p id="quality-p">You can trust</p>
+                                            </div>
+                                        </div>
+                                        <div class="quality-box">
+                                            <div class="logo">
+    
+                                                <i class="fa-solid fa-arrow-rotate-left"></i>
+                                            </div>
+                                            <div class="logo-text">
+                                                <h3 id="quality-h3">Return Policy</h3>
+                                                <p id="quality-p">No questions asked</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <hr />
+                                <div class="app-links">
+                                    <p style="margin-bottom: 10px;">Shopping at fingertips!! Download our app</p>
+                                    <a href=""><i class="fa-brands fa-google-play"></i></a>
+                                    <a href=""><i class="fa-brands fa-apple"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Login SignUp End  -->
+</body>
+
+</html>
+<script>
+    document.querySelector("#navbar_login").addEventListener("click", () => {
+        showLoginTab()
+    })
+
+    // Add item to cart from local storage
+    if(localStorage.getItem("cart")!=null)
+    {
+        document.querySelector("#cart_items").innerText = JSON.parse(localStorage.getItem("cart")).length
+    }
+    else{
+        document.querySelector("#cart_items").innerText = 0
+    }
+    
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            document.getElementById("navbar_top").style.display = "none";
+            document.getElementById("navbar_bottom").style.display = "none";
+            var logo = document.getElementById("logoImg")
+            logo.src = "https://github.com/Deepak123bharat/MasaiknightsBigbasket/blob/main/icons/navbar/bbLogoSmall.png?raw=true"
+            logo.style.height = "50px"
+            logo.style.margin = "0"
+            logo.style.padding = "0"
+            document.getElementById("navbar").style.boxShadow = "rgba(60, 64, 67, 0.5) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
+            var img = document.getElementById("imgShopId")
+            if (img == null) {
+                var imgDiv = document.getElementById("imgAndshop")
+                var shopDiv = document.createElement("div")
+                imgDiv.style.display = "flex"
+                shopDiv.id = "imgShopId"
+                shopDiv.style.display = "flex"
+                shopDiv.style.alignItems = "flex-end"
+                // shopDiv.addEventListener("mouseenter", ()=>{
+                //     document.getElementById("category-hover-div").visibility = "visible"
+                // })
+                var text = document.createElement("p")
+                text.id = "shopText"
+                text.innerHTML = "SHOP <i class=\"fa-solid fa-chevron-down\"></i>"
+                shopDiv.append(text)
+                imgDiv.append(shopDiv)
+            }
+
+        }
+        if (window.scrollY < 50) {
+            document.getElementById("navbar_top").style.display = "flex";
+            document.getElementById("navbar_bottom").style.display = "flex";
+            var logo = document.getElementById("logoImg")
+            logo.src = "https://github.com/Deepak123bharat/MasaiknightsBigbasket/blob/main/images/logos/logo.png?raw=true"
+            logo.style.height = "75px"
+            logo.style.marginBottom = "0px"
+            document.getElementById("navbar_middle").style.marginTop = "0px"
+            document.getElementById("navbar").style.boxShadow = ""
+            var img = document.getElementById("imgShopId")
+            if (img != null)
+                img.remove()
+
+        }
+    })
+    var height = document.getElementById("navbar").offsetHeight
+
+    // document.getElementById("cart").addEventListener("click", () => {
+    //     window.location.href = "cart.html"
+    // })
+
+
+    // add shop with logo when scrolling in y direction
+
+    //Shop by category arr 
+    var arr = ["Fresh Vegetables", "Herbs & Seasonings", "Fresh Fruits", "Organic Fruits & Vegetables", "Cuts & Sprouts", "Exotic Fruits & Veggies", "Flower Bouquets, Bunches"]
+    var linksArr = ["/productData/Vegetables/products.html", "/productData/Dairy/products.html", "/productData/Vegetables/products.html", "/productData/cleaning/products.html", "/productData/Beverages/products.html", "/productData/Beverages/products.html", "/productData/Kitchen/products.html"]
+
+    var items = shuffle(arr)
+    var div = document.querySelector(".category-hover-div")
+    var div1 = document.querySelectorAll(".category-hover-div-1-options")
+
+    Array.from(div1).forEach(element => {
+        element.addEventListener("mouseover", () => {
+            var div2 = document.querySelector(".category-hover-div-2")
+            div2.innerHTML = ""
+            arr = shuffle(arr)
+            arr.forEach((element, index) => {
+                var it = document.createElement("div")
+                it.className = "category-hover-div-2-options"
+                it.innerHTML = `<a href="`+linksArr[index]+`">`+element+`</a>`
+                div2.append(it)
+            });
+
+            var div3 = document.querySelector(".category-hover-div-3")
+            div3.innerHTML = ""
+            arr = shuffle(arr)
+            arr.forEach((element, index) => {
+                var it = document.createElement("div")
+                it.className = "category-hover-div-3-options"
+                it.innerHTML = `<a href="`+linksArr[index]+`">`+element+`</a>`
+                div3.append(it)
+            });
+
+            var div4 = document.querySelector(".category-hover-div-4")
+            div4.innerHTML = ""
+            arr = shuffle(arr)
+            arr.forEach((element, index) => {
+                var it = document.createElement("div")
+                it.className = "category-hover-div-4-options"
+                it.innerHTML = `<a href="`+linksArr[index]+`">`+element+`</a>`
+                div4.append(it)
+            });
+
+        })
+    })
+
+    function shuffle(array) {
+        let currentIndex = array.length, randomIndex;
+
+        // While there remain elements to shuffle.
+        while (currentIndex != 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+        }
+
+        return array;
+    }
+
+    // document.querySelector("#cart").addEventListener("click", () => {
+    //     window.location.href = "/cart.html"
+    // })
+
+    //search functionality
+    document.querySelector("#mfglass").addEventListener("click", ()=>{
+        var searchTarget = document.querySelector("#search_item > input").value 
+        localStorage.setItem("searchTarget", searchTarget)
+        window.location.href = "/search.html"
+    })
+
+    // search when enter is pressed
+    document.querySelector("#search_item > input").addEventListener("keypress", (event)=>{
+        if(event.key==="Enter")
+        {
+            var searchTarget = document.querySelector("#search_item > input").value 
+            localStorage.setItem("searchTarget", searchTarget)
+            window.location.href = "/search.html"
+        }
+    })
+
+    
+    //offers click 
+    document.querySelector("#offers").addEventListener("click", ()=>{
+        localStorage.setItem("ShowAllOffers", true)
+        window.location.href = "/search.html"
+    })
+
+
+    // cart hover
+    document.getElementById("cart").addEventListener("mouseenter",showCart);
+document.getElementById("cart").addEventListener("mouseleave",removeCart);
+
+
+
+
+// EMPTY CART TEXT
+
+    
+
+
+
+
+    
+
+
+   
+function showCart(){
+    var product = JSON.parse(localStorage.getItem("cart") || []);
+    console.log(product)
+    if(product.length == 0){
+
+        var mainDiv1 =  document.createElement("div")
+        mainDiv1.setAttribute("id","empty")
+     var innerDiv1 = document.createElement("div")
+     mainDiv1.append(innerDiv1)
+mainDiv1.style.boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px";
+mainDiv1.style.padding="10px"
+innerDiv1.style.width="100%"
+innerDiv1.style.padding="15px"
+innerDiv1.style.textAlign="center"
+innerDiv1.style.backgroundColor="white"
+innerDiv1.style.marginTop="0"
+mainDiv1.style.marginTop="0"
+
+
+
+
+
+    mainDiv1.style.position="absolute";
+    mainDiv1.style.width="35vw";
+    mainDiv1.style.top="47px";
+    mainDiv1.style.right="-1px";
+
+    mainDiv1.style.backgroundColor="#eeeeee";
+    innerDiv1.innerText="Your basket is empty. Start shopping now!"
+   
+    document.querySelector("#cart").append(mainDiv1)
+    }else{
+        var mainDiv =  document.createElement("div")
+var innerDiv = document.createElement("div")
+mainDiv.style.boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px";
+
+innerDiv.style.width="100%"
+innerDiv.style.padding="15px"
+innerDiv.style.marginTop="0"
+mainDiv.style.marginTop="0"
+
+
+
+
+    mainDiv.setAttribute("id","cartPopup")
+    mainDiv.style.position="absolute";
+    mainDiv.style.width="35vw";
+    mainDiv.style.top="47px";
+    mainDiv.style.right="-1px";
+
+    mainDiv.style.backgroundColor="#eeeeee";
+    document.querySelector("#cart").append(mainDiv)
+
+    // innerDiv.style.padding="10px";
+   
+   
+    product.map(function (elem,index){
+        var itemsDiv = document.createElement("div")
+
+        itemsDiv.style.marginTop="0"
+        itemsDiv.style.marginBottom="8px"
+        itemsDiv.style.backgroundColor="white"
+        itemsDiv.style.padding="3px"
+
+
+        var imageDiv = document.createElement("div");
+        imageDiv.style.marginTop="0"
+
+        var image = document.createElement("img");
+        image.style.height="100%"
+
+
+        imageDiv.style.height="60px"
+        imageDiv.style.marginLeft="0";
+
+        imageDiv.append(image);
+        var decDiv = document.createElement("div");
+        decDiv.style.marginLeft="10px";
+        decDiv.style.textAlign="left"
+
+        decDiv.style.marginTop="0"
+
+        decDiv.style.display="flex";
+        decDiv.style.flexDirection="column";
+        decDiv.style.gap="5px"
+        var brandText = document.createElement("p");
+        brandText.innerText= elem.brand.toUpperCase()
+        brandText.style.fontSize="10px"
+        brandText.style.margin="0"
+        var nameText = document.createElement("p")
+        nameText.innerText=elem.name
+        nameText.style.margin="0"
+        nameText.style.fontWeight="bolder"
+        var quantityText = document.createElement("p")
+        quantityText.innerText=elem.Quantity
+        quantityText.style.margin="0"
+        quantityText.style.fontSize="10px"
+        decDiv.append(brandText,nameText,quantityText)
+        var priceDiv = document.createElement("div");
+        priceDiv.style.width="100px"
+        priceDiv.style.marginRight="0"
+        priceDiv.style.marginLeft="auto"
+        priceDiv.style.marginTop="0"
+        priceDiv.style.display="flex";
+        priceDiv.style.alignItems="center"
+        priceDiv.style.justifyContent="left"
+
+        var priceText = document.createElement("p")
+        priceText.style.textAlign="left"
+        priceText.style.margin="0"
+        priceText.innerText="Rs "+elem.price;
+        priceDiv.append(priceText)
+        var deleteCartItem = document.createElement("div");
+        var deleteBtn = document.createElement("div");
+        deleteBtn.innerHTML=`<i id="closeBtn" class="fa-solid fa-xmark" style="margin:8px" onclick="closepopup()"></i>`;
+        deleteBtn.addEventListener("mouseover", ()=>{
+            deleteBtn.style.color="lightgreen"
+        })
+        deleteBtn.addEventListener("mouseleave", ()=>{
+            deleteBtn.style.color="black"
+        })
+        deleteCartItem.append(deleteBtn);
+        image.setAttribute("src",elem.image_adress);
+        itemsDiv.append(imageDiv,decDiv,priceDiv,deleteCartItem);
+        deleteBtn.addEventListener("click",function (index){
+        product.splice(index,1);
+        localStorage.setItem("cart",JSON.stringify(product))
+       
+        deleteBtn.parentNode.parentNode.remove()
+        document.querySelector("#cart_qunt>p>span").innerText=product.length
+       if(product.length == 0){
+        document.getElementById("cartPopup").outerHTML="";
+        
+        
+       }
+
+        })
+        itemsDiv.style.display="flex";
+        itemsDiv.style.borderRadius="5px"
+
+        innerDiv.append(itemsDiv);
+    })
+   
+
+    var checkoutbtn = document.createElement("button");
+    checkoutbtn.style.padding="10px 10px"
+    checkoutbtn.style.backgroundColor="#72A020"
+    checkoutbtn.style.color="white";
+    checkoutbtn.style.border="0";
+    checkoutbtn.style.borderRadius="5px"
+    checkoutbtn.style.cursor="pointer"
+    checkoutbtn.style.marginTop="5px"
+    checkoutbtn.style.height="40px"
+    checkoutbtn.addEventListener("mouseover",()=>{
+        checkoutbtn.style.backgroundColor="#c1e879"
+    })
+    checkoutbtn.addEventListener("mouseleave",()=>{
+        checkoutbtn.style.backgroundColor="#72A020"
+    })
+        checkoutbtn.innerText="View Basket & Checkout"
+        checkoutbtn.addEventListener("click",() =>{
+            window.location.href = "/cart.html"
+        })
+    innerDiv.append(checkoutbtn)
+    mainDiv.append(innerDiv);
+    mainDiv.style.display="none";
+        document.getElementById("cartPopup").style.display="flex";
+    }
+
+}
+function removeCart(){
+    var product = JSON.parse(localStorage.getItem("cart") || []);
+    if(product.length==0){
+        document.getElementById("empty").remove();
+        document.getElementById("cartPopup").outerHTML="";
+        
+    }else{
+        document.getElementById("cartPopup").outerHTML="";
+    }
+    
+    
+    
+}
+
+</script>
+<script src="/scripts/login.js"></script>

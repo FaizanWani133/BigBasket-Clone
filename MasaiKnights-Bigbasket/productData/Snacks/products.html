@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../products.css" />
+    <link rel="stylesheet" href="/login/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Snacks & Branded Foods</title>
+
+    <script
+      src="https://kit.fontawesome.com/b678f324bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("./../../navbar.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="includedContent"></div>
+    <section class="main-products">
+      <div class="filters-section">
+        <div class="brand-filter">
+          <h4 class="filter-title">Brand</h4>
+
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter1" type="checkbox" /><span
+              >MAGGI</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter2" type="checkbox" /><span
+              >Fresho</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter3" type="checkbox" /><span
+              >Lays</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter4" type="checkbox" /><span
+              >Britannia</span
+            >
+          </div>
+        </div>
+        <div class="pack-filter">
+          <h4 class="filter-title">Pack Type</h4>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter5" type="checkbox" /><span
+              >Tubs</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter6" type="checkbox" /><span
+              >Pouch</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter7" type="checkbox" /><span
+              >Can</span
+            >
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter8" type="checkbox" /><span
+              >Tin</span
+            >
+          </div>
+        </div>
+        <div class="price-filter">
+          <h4 class="filter-title">Price</h4>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter9" type="checkbox" /><span
+              >Less than Rs 20
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter10" type="checkbox" /><span
+              >Rs 21 to Rs 50
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter11" type="checkbox" /><span
+              >Rs 51 to Rs 100
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter12" type="checkbox" /><span
+              >Rs 101 to Rs 200
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter13" type="checkbox" /><span
+              >More than Rs 201
+            </span>
+          </div>
+        </div>
+        <div class="discount-filter">
+          <h4 class="filter-title">Discount</h4>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter14" type="checkbox" /><span
+              >Upto 5%
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter15" type="checkbox" /><span
+              >5% - 10%
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter16" type="checkbox" /><span
+              >10% - 15%
+            </span>
+          </div>
+          <div class="filter-checkbox">
+            <input class="checkbox" id="brand-filter17" type="checkbox" /><span
+              >More than 15%</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="products-container">
+        <div class="products-heading">
+          <h2 id="title">
+            Snacks & Branded Foods<span id="productValue"></span>
+          </h2>
+        </div>
+        <div class="sort-bar">
+          <select id="sort-bar" onchange="priceSort()">
+            <option value="lowToHigh">Price - Low to High</option>
+            <option value="highToLow">Price - High to Low</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </div>
+        <div class="allproducts-border">
+          <i class="fa-solid fa-truck"> <span>ALL PRODUCTS</span> </i>
+        </div>
+        <div class="products-cards"></div>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="/productData/pro.js"></script>
+<script src="products.js"></script>
+<script src="/scripts/login.js"></script>

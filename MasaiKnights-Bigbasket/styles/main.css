@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+  
+}
+
+.topBt {
+    display: none;
+}
+
+.topBtn {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.topBtn button {
+    margin: 0px 10px;
+    padding: 7px 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;
+}
+
+.ayurveda {
+    background-color: rgb(19, 68, 19);
+    color: white;
+}
+
+.bank h3,
+.popular h3,
+.offer h3,
+#Fruit_sectoin h3,
+.daily_staple h3,
+#Beverages_sectoin h3,
+.snake h3,
+.cleaning h3,
+#beauty_sectoin h3,
+.home h3,
+.store h3 {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+
+}
+
+.topBank,
+.mostPopular,
+.topOffer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+.singleImg img {
+    cursor: pointer;
+}
+
+.topBank img,
+.mostPopular img,
+.topOffer img {
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid wheat;
+}
+
+.topBank img:hover,
+.mostPopular img:hover,
+.topOffer img:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+hr {
+    margin: auto;
+}
+
+.fruit,
+.beverage,
+.beauty {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.singleImg {
+    height: 300px;
+    border: 1px solid wheat;
+    margin-right: 8px;
+}
+
+.multiImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.multiImg img {
+    height: 200px;
+    border: 1px solid wheat;
+    cursor: pointer;
+}
+
+.daily_staple,
+.home,
+.store {
+    width: 80%;
+    margin: auto;
+}
+
+.staples,
+.homes,
+.brands {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* border: 5px solid blue; */
+    margin-bottom: 50px;
+}
+
+.staples img,
+.homes img,
+.brands img {
+    height: 150px;
+    cursor: pointer;
+    border: 1px solid wheat;
+}
+
+.staples img:hover,
+.homes img:hover,
+.brands img:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#carouselExampleControls {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgb(163, 133, 133);
+    z-index: 1;
+    padding: 29px 13px;
+    margin-right: 216px;
+}
+
+.carousel-control-next-icon {
+    background-color: rgb(163, 133, 133);
+    padding: 29px 13px;
+    margin-right: -218px;
+}
+
+.carousel-item img {
+    padding: 5px 10px;
+    border: 1px solid wheat;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: green;
+    width: 60px;
+}
+
+.carousel-indicators{
+    z-index: 1;
+}
+
+/* all footer css  */
+footer {
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(112, 110, 110);
+    margin-top: 20px;
+    padding: 10px 12px 15px 5px;
+}
+
+.detail p,
+.datail ul li {
+    font-size: 15px;
+}
+
+.detail button {
+    margin-left: 15px;
+    padding: 1px 5px;
+    border: 1px solid rgb(102, 99, 99);
+    font-size: 14px;
+}
+
+.size {
+    font-size: 15px
+}
+
+#hide {
+    display: none;
+}
+
+.footer_all {
+    /* display: grid;
+grid-template-columns: repeat(4.1fr); */
+    /* gap: 40px; */
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.footer_all div {
+    margin-left: 20px;
+    margin-right: 30px;
+    width: 20%;
+}
+
+.footer_all h5 {
+    font-size: 16px;
+    color: green;
+}
+
+.footer_all h6 {
+    font-size: 14px;
+    margin: 17px 0px;
+    cursor: pointer;
+}
+
+.footer_all h6:hover {
+    color: rgb(24, 131, 131);
+}
+
+.footer_all img {
+    margin: 5px 0px 20px 0px;
+    /* width: 40px ; */
+    height: 60px;
+    cursor: pointer;
+}
+
+.footer_icon img {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.social-item {
+    height: 30px;
+    width: 30px;
+    margin: 0px 15px;
+}
+
+.social-item img {
+    filter: grayscale(0);
+    transition: .5s ease filter;
+    /* background-color: red; */
+}
+
+.social-item img:hover {
+    filter: grayscale(1);
+    background-color: white;
+}
+
+#text_footer {
+    width: 80%;
+    margin: auto;
+    margin: 30px auto;
+}
+
+.text-item {
+    display: flex;
+}
+
+.text-item h4 {
+    font-size: 12px;
+    margin-right: 30px;
+    width: 190px;
+    color: green;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.text-item p {
+    font-size: 14px;
+}
+
+.image_footer {
+    display: flex;
+}
+
+.image_footer img {
+    height: 90px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+/*  top button to click then you are top */
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border: none;
+    background-color: rgb(82, 209, 82);
+}
+
+#btnTop a {
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.fa {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width:767px) and (max-width:990px) {
+
+    .topBank,
+    .mostPopular,
+    .topOffer {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+
+    .topBtn button {
+        margin: 5px 4px;
+        padding: 7px 45px;
+        font-size: 10px;
+        font-weight: bolder;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .multiImg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
+
+    .multiImg .fruit_img {
+        display: none;
+        height: 200px;
+        border: 1px solid wheat;
+        cursor: pointer;
+    }
+
+    .staples .staples_item,
+    .homes .staples_item,
+    .brands .staples_item {
+        height: 150px;
+        cursor: pointer;
+        border: 1px solid wheat;
+        display: none;
+    }
+
+    .topBank,
+    .mostPopular,
+    .topOffer {
+        margin: auto;
+    }
+
+    .daily_staple,
+    .home,
+    .store {
+        width: 80%;
+        margin: auto;
+    }
+
+    .bank h3,
+    .popular h3,
+    .offer h3,
+    #Fruit_sectoin h3,
+    .daily_staple h3,
+    #Beverages_sectoin h3,
+    .snake h3,
+    .cleaning h3,
+    #beauty_sectoin h3,
+    .home h3,
+    .store h3 {
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px 0px 20px 0px;
+
+    }
+
+    .staples img:hover,
+    .homes img:hover,
+    .brands img:hover {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .text-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-item h4 {
+        margin-left: 0px;
+    }
+
+    .image_footer {
+        display: none;
+    }
+
+    .footer_all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: auto;
+        width: 80%;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .footer_all h5 {
+        font-size: 16px;
+        color: green;
+        width: 145px;
+    }
+
+    .topBtn {
+        display: none;
+    }
+
+    .topBt {
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .topBt button {
+        margin: 0px 10px;
+        padding: 7px 30px;
+        font-size: 17px;
+        font-weight: bolder;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .ayurveda {
+        background-color: rgb(19, 68, 19);
+        color: white;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:766px) {
+
+    .topBank,
+    .mostPopular,
+    .topOffer {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        grid: 8px;
+    }
+
+    .fruit,
+    .beverage,
+    .beauty {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        /* text-align: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .staples .items,
+    .homes .items,
+    .brands .items {
+        height: 150px;
+        cursor: pointer;
+        border: 1px solid wheat;
+        display: none;
+    }
+
+    .topBtn button {
+        margin: 5px 4px;
+        padding: 7px 45px;
+        font-size: 10px;
+        font-weight: bolder;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .singleImg {
+        margin-left: 30px;
+        margin-bottom: 70px;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-item h4 {
+        margin-left: 0px;
+    }
+
+    .image_footer {
+        display: none;
+    }
+
+    .footer_all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: auto;
+        width: 80%;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .footer_all h5 {
+        font-size: 16px;
+        color: green;
+        width: 145px;
+    }
+
+    .topBtn {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 20px auto;
+    }
+}

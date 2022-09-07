@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 3;
+}
+
+.main-container {
+  position: relative;
+  display: block;
+
+  left: 13%;
+  width: 280px;
+  height: 437px;
+  margin: 114px auto;
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+}
+@keyframes modalopen {
+  from {
+    margin: 0 auto;
+  }
+  to {
+    margin: 114px auto;
+  }
+}
+@keyframes modalclose {
+  from {
+    margin: 114px auto;
+  }
+  to {
+    margin: 0 auto;
+  }
+}
+
+.child-container {
+  position: relative;
+  background-color: #fff;
+
+  display: block;
+
+  background-clip: padding-box;
+  outline: 0;
+}
+.final-container > i {
+  opacity: 1;
+  z-index: 989;
+  margin: -12px -12px 0 0;
+  position: relative;
+  overflow: hidden;
+  float: right;
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  outline: none;
+  border: transparent;
+  border-radius: 50%;
+  border-color: rgb(80, 80, 80);
+  background-color: white;
+}
+.box-3 {
+  display: none;
+  position: absolute;
+  padding: 30px 30px 10px 30px;
+  left: -355px;
+  top: -40px;
+  width: 355px;
+  min-height: 510px;
+  height: auto;
+  box-shadow: rgba(141, 135, 135, 0.58) 0px 0px 36px 0px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 242, 242);
+  border-image: initial;
+  overflow: hidden;
+}
+.final-container > i:hover {
+  color: #8dd126;
+}
+
+.text-center {
+  color: #aee45c;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+.box {
+  display: block;
+  position: absolute;
+  padding-top: 30px;
+  left: -355px;
+  top: -40px;
+  width: 355px;
+  min-height: 510px;
+  height: auto;
+  box-shadow: rgba(141, 135, 135, 0.58) 0px 0px 36px 0px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 242, 242);
+  border-image: initial;
+  overflow: hidden;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.box-2 {
+  display: block;
+  padding: 30px 25px;
+  border-radius: 3px;
+  width: 280px;
+  height: 440px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+  opacity: 0.5;
+}
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: all 200ms;
+}
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+}
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #78bd12;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+}
+/* input:invalid{
+    border-color: red;
+} */
+
+.submit-btn {
+  margin: 8px 0;
+  width: 100%;
+  padding: 15px;
+  opacity: 0.8;
+}
+
+#terms-conditions {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.5;
+  line-height: 15px;
+}
+#signup {
+  background-color: #8dd126;
+  border: none;
+  padding: 18px;
+  color: white;
+}
+#signup:hover {
+  background-color: #ade461;
+}
+.app-links {
+  display: block;
+  text-align: center;
+  opacity: 0.5;
+  color: #000;
+  font-size: 12px;
+  margin-top: 120px;
+}
+.quality-box {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.logo > i {
+  font-size: 20px;
+  opacity: 0.6;
+}
+.logo-text {
+  margin-left: 10px;
+}
+#quality-h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  opacity: 0.6;
+  font-size: 14px;
+}
+#quality-p {
+  padding: 0;
+  margin: 0;
+  opacity: 0.6;
+  font-size: 10px;
+}
+#switch-to-login {
+  border: 1px solid #555;
+}
+#switch-to-login:hover {
+  background-color: rgb(226, 226, 226);
+}
+.app-links > a {
+  margin: 0 20px 0 2px;
+}
+#applinks-p {
+  margin: 0;
+  padding-bottom: 0;
+}
+.app-links > a > i {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.app-links > a > i:hover {
+  opacity: 0.4;
+}
+.homepage-link {
+  margin-top: 113px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+hr {
+  margin-top: 30px;
+  border-bottom: 1px solid #eee;
+  opacity: 0.2;
+}
