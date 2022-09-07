@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <title>Fruits & Vegetables</title>
-    <link rel="stylesheet" href="/productData/products.css" />
+    <link rel="stylesheet" href="./productData/products.css" />
     <script
       src="https://kit.fontawesome.com/b678f324bd.js"
       crossorigin="anonymous"
@@ -20,7 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(function () {
-        $("#includedContent").load("./../../navbar.html");
+        $('#includedContent').load('./../../navbar.html');
       });
     </script>
   </head>
@@ -181,7 +181,7 @@
     </section>
   </body>
 </html>
-<script src="productData/pro.js"></script>
+<script src="./productData/pro.js"></script>
 <script>
   var allProductArr = [];
   allProducts.beautyArr.forEach((element) => {
@@ -214,22 +214,22 @@
 
   //Get Data from local storage
   // search
-  var searchTarget = localStorage.getItem("searchTarget");
-  localStorage.removeItem("searchTarget");
+  var searchTarget = localStorage.getItem('searchTarget');
+  localStorage.removeItem('searchTarget');
 
   // offers in navbar
-  var showAllOffers = localStorage.getItem("ShowAllOffers");
-  localStorage.removeItem("ShowAllOffers");
+  var showAllOffers = localStorage.getItem('ShowAllOffers');
+  localStorage.removeItem('ShowAllOffers');
 
   // Discount divs on the main page
-  var itemPriceLessThen30 = localStorage.getItem("showItemsPriceLessThen30");
-  localStorage.removeItem("showItemsPriceLessThen30");
-  var DealsOfTheWeekImg1 = localStorage.getItem("DealsOfTheWeekImg1");
-  localStorage.removeItem("DealsOfTheWeekImg1");
-  var BigPackBiggerDiscount = localStorage.getItem("BigPackBiggerDiscount");
-  localStorage.removeItem("BigPackBiggerDiscount");
-  var CombosYouCantMiss = localStorage.getItem("CombosYouCantMiss");
-  localStorage.removeItem("CombosYouCantMiss");
+  var itemPriceLessThen30 = localStorage.getItem('showItemsPriceLessThen30');
+  localStorage.removeItem('showItemsPriceLessThen30');
+  var DealsOfTheWeekImg1 = localStorage.getItem('DealsOfTheWeekImg1');
+  localStorage.removeItem('DealsOfTheWeekImg1');
+  var BigPackBiggerDiscount = localStorage.getItem('BigPackBiggerDiscount');
+  localStorage.removeItem('BigPackBiggerDiscount');
+  var CombosYouCantMiss = localStorage.getItem('CombosYouCantMiss');
+  localStorage.removeItem('CombosYouCantMiss');
 
   if (searchTarget != null) {
     allProductArr = allProductArr.filter((value) => {
@@ -273,21 +273,21 @@
     });
   }
 
-  var checkboxArr = document.querySelectorAll(".checkbox");
+  var checkboxArr = document.querySelectorAll('.checkbox');
 
   for (var i = 0; i < checkboxArr.length; i++) {
-    checkboxArr[i].addEventListener("click", function () {
+    checkboxArr[i].addEventListener('click', function () {
       var newArr = [];
 
       if (brandFilter1.checked === true) {
         newArr = allProductArr.filter(function (elem) {
-          return elem.brand == "MAGGI";
+          return elem.brand == 'MAGGI';
         });
         //   displayProducts(newArr);
       }
       if (brandFilter2.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.brand == "Fresho";
+          return elem.brand == 'Fresho';
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -296,7 +296,7 @@
       }
       if (brandFilter3.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.brand == "Lays";
+          return elem.brand == 'Lays';
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -305,7 +305,7 @@
       }
       if (brandFilter4.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.brand == "Britannia";
+          return elem.brand == 'Britannia';
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -314,7 +314,7 @@
       }
       if (brandFilter5.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.brand == "Shree Neelkamal";
+          return elem.brand == 'Shree Neelkamal';
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -323,7 +323,7 @@
       }
       if (brandFilter6.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.brand == "BB Popular";
+          return elem.brand == 'BB Popular';
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -332,7 +332,7 @@
       }
       if (brandFilter7.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.Quantity.includes("can");
+          return elem.Quantity.includes('can');
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -341,7 +341,7 @@
       }
       if (brandFilter8.checked === true) {
         var tempArr = allProductArr.filter(function (elem) {
-          return elem.Quantity.includes("tin");
+          return elem.Quantity.includes('tin');
         });
         for (var i = 0; i < tempArr.length; i++) {
           newArr.push(tempArr[i]);
@@ -470,17 +470,17 @@
         brandFilter16.checked == false &&
         brandFilter17.checked == false
       ) {
-        document.querySelector("#title").innerText +=
-          " (" + allProductArr.length + ")";
+        document.querySelector('#title').innerText +=
+          ' (' + allProductArr.length + ')';
         displayProducts(allProductArr);
       } else {
-        document.querySelector("#title").innerText +=
-          " (" + allProductArr.length + ")";
+        document.querySelector('#title').innerText +=
+          ' (' + allProductArr.length + ')';
         displayProducts(newArr);
       }
     });
   }
-  document.querySelector("#title").innerText +=
-    " (" + allProductArr.length + ")";
+  document.querySelector('#title').innerText +=
+    ' (' + allProductArr.length + ')';
   displayProducts(allProductArr);
 </script>

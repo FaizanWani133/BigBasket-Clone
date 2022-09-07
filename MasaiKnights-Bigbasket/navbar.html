@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="/login/login.css">
+    <link rel="stylesheet" href="./login/login.css">
     <style>
 
          /* Login css Start */
@@ -497,7 +497,7 @@
                     </div>
                     <div id="navbar_middle">
                         <div id="imgAndshop">
-                            <a href="/index.html" style="opacity: 1;">
+                            <a href="./index.html" style="opacity: 1;">
                             <img id="logoImg"
                                 src="https://github.com/Deepak123bharat/MasaiknightsBigbasket/blob/main/images/logos/logo.png?raw=true"
                                 alt="" style="height: 75px;" /></a>
@@ -534,23 +534,23 @@
                                 <div class="category-hover-div" id="category-hover-div">
                                     <div class="category-hover-div-1">
                                         <div class="category-hover-div-1-options">
-                                            <a href="/productData/Vegetables/products.html">Fruits &amp; Vegetables</a>
+                                            <a href="./productData/Vegetables/products.html">Fruits &amp; Vegetables</a>
                                         </div>
                                         <div class="category-hover-div-1-options foodgrains_option">
-                                            <a href="/productData/FoodGrains/products.html">Foodgrains, Oil &amp; Masala</a>
+                                            <a href="./productData/FoodGrains/products.html">Foodgrains, Oil &amp; Masala</a>
                                         </div>
                                         <div class="category-hover-div-1-options">
-                                            <a href="/productData/Dairy/products.html">Bakery Cakes & Dairy</a>
+                                            <a href="./productData/Dairy/products.html">Bakery Cakes & Dairy</a>
                                         </div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/Beverages/products.html">Beverages</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/Snacks/products.html">Snacks &amp; Branded Foods</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/Beauty/products.html">Beauty & Hygiene</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/cleaning/products.html">Cleaning &amp; Household</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/kitchen/products.html">Kitchen, Garden &amp; Pets</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/eggs/product.html">Eggs, Meats &amp; Fish</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/Vegetables/products.html">Gourmet &amp; World Food</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/Beauty/products.html">Baby Care</a></div>
-                                        <div class="category-hover-div-1-options"><a href="/productData/FoodGrains/products.html">View All</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/Beverages/products.html">Beverages</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/Snacks/products.html">Snacks &amp; Branded Foods</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/Beauty/products.html">Beauty & Hygiene</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/cleaning/products.html">Cleaning &amp; Household</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/kitchen/products.html">Kitchen, Garden &amp; Pets</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/eggs/product.html">Eggs, Meats &amp; Fish</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/Vegetables/products.html">Gourmet &amp; World Food</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/Beauty/products.html">Baby Care</a></div>
+                                        <div class="category-hover-div-1-options"><a href="./productData/FoodGrains/products.html">View All</a></div>
                                     </div>
                                     <div class="category-hover-div-2">
                                         <div class="category-hover-div-2-options">
@@ -850,7 +850,7 @@
     document.querySelector("#mfglass").addEventListener("click", ()=>{
         var searchTarget = document.querySelector("#search_item > input").value 
         localStorage.setItem("searchTarget", searchTarget)
-        window.location.href = "/search.html"
+        window.location.href = "./search.html"
     })
 
     // search when enter is pressed
@@ -859,7 +859,7 @@
         {
             var searchTarget = document.querySelector("#search_item > input").value 
             localStorage.setItem("searchTarget", searchTarget)
-            window.location.href = "/search.html"
+            window.location.href = "./search.html"
         }
     })
 
@@ -867,7 +867,7 @@
     //offers click 
     document.querySelector("#offers").addEventListener("click", ()=>{
         localStorage.setItem("ShowAllOffers", true)
-        window.location.href = "/search.html"
+        window.location.href = "./search.html"
     })
 
 
@@ -1050,7 +1050,7 @@ mainDiv.style.marginTop="0"
     })
         checkoutbtn.innerText="View Basket & Checkout"
         checkoutbtn.addEventListener("click",() =>{
-            window.location.href = "/cart.html"
+            window.location.href = "./cart.html"
         })
     innerDiv.append(checkoutbtn)
     mainDiv.append(innerDiv);
@@ -1074,4 +1074,4 @@ function removeCart(){
 }
 
 </script>
-<script src="/scripts/login.js"></script>
+<script src="./scripts/login.js"></script>
