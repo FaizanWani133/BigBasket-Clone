@@ -1,2 +1,2 @@
 # MasaiKnights-Bigbasket
-## [Link](https://deepak123bharat.github.io/MasaiknightsBigbasket/)
+## [Link](https://faizansbigbasket.netlify.app//)
